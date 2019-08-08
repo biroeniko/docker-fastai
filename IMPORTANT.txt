@@ -2,4 +2,3 @@ Pytorch:
 https://ngc.nvidia.com/catalog/containers/nvidia:pytorch
 docker run -it --rm -v local_dir:container_dir nvcr.io/nvidia/pytorch:<xx.xx>-py3
 
-docker run -it --rm -v local_dir:container_dir nvcr.io/nvidia/pytorch:<xx.xx>-py3
