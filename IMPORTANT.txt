@@ -2,3 +2,8 @@ Pytorch:
 https://ngc.nvidia.com/catalog/containers/nvidia:pytorch
 docker run -it --rm -v local_dir:container_dir nvcr.io/nvidia/pytorch:<xx.xx>-py3
 
+Test GPU:
+docker run -it --rm splashblot/docker-pytorch:cuda91 nvidia-smi
+docker run --runtime=nvidia --rm nvidia/cuda:10.0-base nvidia-smi
+
+https://forums.fast.ai/t/how-to-know-if-fastai-is-using-the-nvidia-gpu/45605/2
