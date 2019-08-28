@@ -10,3 +10,5 @@ This docker image is based on the official Nvidia pytorch docker image. Using th
 
 ## Requirements
 - Docker
+- Nvidia GPU
+- CUDA drivers which are compatible with the GPU
