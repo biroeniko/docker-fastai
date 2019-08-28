@@ -1,2 +1,10 @@
 Build the image:
 docker build -t fastai .
+
+Remove docker containers:
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+Remove docker image:
+docker images
+docker image rm 75835a67d134 2a4cca5ac898
