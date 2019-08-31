@@ -3,8 +3,7 @@ FROM nvcr.io/nvidia/pytorch:19.07-py3
 RUN apt-get update
 
 # Install fast.ai
-RUN git clone https://github.com/fastai/fastai.git
-RUN cd fastai && conda env update && /bin/bash -c "source activate fastai" && rm -rf fastai
+RUN conda install -c fastai fastai
 
 # Clone course-v3
 RUN git clone https://github.com/fastai/course-v3.git
